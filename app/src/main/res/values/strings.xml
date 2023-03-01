@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Orgs</string>
+    <string name="save_botton">Salvar</string>
+    <string name="value_valor">Valor</string>
+    <string name="value_descricao">Descrição</string>
+    <string name="value_nome">Nome</string>
+</resources>
