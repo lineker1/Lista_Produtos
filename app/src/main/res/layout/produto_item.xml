@@ -10,12 +10,14 @@
         android:id="@+id/produto_item_nome"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_margin="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_bold"
+        android:maxLines="1"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Cesta de frutas" />
 
@@ -23,11 +25,12 @@
         android:id="@+id/produto_item_descricao"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat"
+        android:maxLines="1"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
+        app:layout_constraintStart_toStartOf="@id/produto_item_nome"
         app:layout_constraintTop_toBottomOf="@+id/produto_item_nome"
         tools:text="Laranja, manga e uva" />
 
@@ -35,14 +38,27 @@
         android:id="@+id/produto_item_valor"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/produto_item_nome"
+        app:layout_constraintStart_toStartOf="@id/produto_item_nome"
         app:layout_constraintTop_toBottomOf="@+id/produto_item_descricao"
         tools:text="19,99" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/produto_item_nome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/produto_1"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        android:contentDescription="@string/imagem_produto" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
