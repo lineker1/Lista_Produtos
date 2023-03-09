@@ -30,11 +30,11 @@ class FormularioProdutoActivity : AppCompatActivity() {
     }
 
     private fun criaProduto(): Produto {
-        val campoNome = binding.acitivityFormularioProdutoNome
+        val campoNome = binding.formularioProdutoTextInputNome
         val nome = campoNome.text.toString()
-        val campoDescricao = binding.acitivityFormularioProdutoDescricao
+        val campoDescricao = binding.formularioProdutoTextInputDescricao
         val descricao = campoDescricao.text.toString()
-        val campoValor = binding.acitivityFormularioProdutoValor
+        val campoValor = binding.formularioProdutoTextInputValor
         val valorEmTexto = campoValor.text.toString()
         val valor = if (valorEmTexto.isBlank()) {
             BigDecimal.ZERO

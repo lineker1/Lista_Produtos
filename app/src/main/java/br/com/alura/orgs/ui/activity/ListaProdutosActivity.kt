@@ -43,4 +43,5 @@ class ListaProdutosActivity : AppCompatActivity() {
         val recyclerView = binding.acitivityListaProdutoRecyclerView
         recyclerView.adapter = adapter
     }
+
 }

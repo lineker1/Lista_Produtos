@@ -12,44 +12,6 @@
         android:layout_height="wrap_content"
         tools:context=".ui.activity.FormularioProdutoActivity">
 
-        <EditText
-            android:id="@+id/acitivity_formulario_produto_nome"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:hint="@string/value_nome"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/acitivity_formulario_produto_descricao"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/value_descricao"
-            android:importantForAutofill="no"
-            android:inputType="text"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="@id/acitivity_formulario_produto_nome"
-            app:layout_constraintStart_toStartOf="@id/acitivity_formulario_produto_nome"
-            app:layout_constraintTop_toBottomOf="@id/acitivity_formulario_produto_nome" />
-
-
-        <EditText
-            android:id="@+id/acitivity_formulario_produto_valor"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/value_valor"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            app:layout_constraintEnd_toEndOf="@id/acitivity_formulario_produto_nome"
-            app:layout_constraintStart_toStartOf="@id/acitivity_formulario_produto_nome"
-            app:layout_constraintTop_toBottomOf="@id/acitivity_formulario_produto_descricao" />
-
         <Button
             android:id="@+id/acitivity_formulario_produto_save_button"
             android:layout_width="0dp"
@@ -59,8 +21,78 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/acitivity_formulario_produto_valor"
+            app:layout_constraintTop_toBottomOf="@+id/formulario_produto_valor"
             app:layout_constraintVertical_bias="1" />
+
+        <ImageView
+            android:id="@+id/activity_imagem_produto"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:contentDescription="@string/imagem_de_cadastro"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/produto_1" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/formulario_produto_nome"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_imagem_produto">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/formulario_produto_TextInput_nome"
+                android:layout_height="wrap_content"
+                android:hint="Nome" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/formulario_produto_descricao"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formulario_produto_nome">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/formulario_produto_TextInput_descricao"
+                android:hint="Descricao" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/formulario_produto_valor"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/formulario_produto_descricao">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/formulario_produto_TextInput_valor"
+                android:inputType="numberDecimal"
+                android:hint="Valor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

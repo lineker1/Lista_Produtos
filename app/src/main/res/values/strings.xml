@@ -5,4 +5,6 @@
     <string name="value_descricao">Descrição</string>
     <string name="value_nome">Nome</string>
     <string name="imagem_produto">Imagem_Produto</string>
+    <string name="button">Button</string>
+    <string name="imagem_de_cadastro">Imagem de cadastro</string>
 </resources>

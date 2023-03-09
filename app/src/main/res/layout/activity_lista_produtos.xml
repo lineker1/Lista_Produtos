@@ -27,5 +27,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/button_add_24"
-        android:focusable="true" />
+        android:focusable="true"
+        android:contentDescription="@string/button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
