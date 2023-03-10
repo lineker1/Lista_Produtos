@@ -7,4 +7,5 @@
     <string name="imagem_produto">Imagem_Produto</string>
     <string name="button">Button</string>
     <string name="imagem_de_cadastro">Imagem de cadastro</string>
+    <string name="url_da_imagem">URL da imagem</string>
 </resources>

@@ -33,7 +33,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/produto_1" />
+            app:srcCompat="@drawable/imagem_padrao" />
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -48,10 +48,11 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
                 android:id="@+id/formulario_produto_TextInput_nome"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nome" />
+                android:hint="Nome"
+                android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,10 +68,11 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/formulario_produto_TextInput_descricao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/formulario_produto_TextInput_descricao"
-                android:hint="Descricao" />
+                android:hint="Descricao"
+                android:inputType="text" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,11 +88,11 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/formulario_produto_TextInput_valor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/formulario_produto_TextInput_valor"
-                android:inputType="numberDecimal"
-                android:hint="Valor" />
+                android:hint="Valor"
+                android:inputType="numberDecimal" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
